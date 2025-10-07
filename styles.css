@@ -1,45 +1,38 @@
 /*  your css code here. If applicable */
+/* Page background and layout */
 body {
-  background-color: #121212;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  padding: 40px;
+  background-color: #A167E7;  /* Light purple background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+	
 }
 
-h1 {
-  color: #00bcd4;
-  margin-bottom: 40px;
-}
-
+/* Container for buttons */
 #buttons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  gap: 40px;
 }
 
+/* Buttons (sound + stop) */
 .btn, .stop {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 8px;
-  background-color: #333;
+  background-color: #5E2E9E;  /* Dark purple */
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 40px;
   font-size: 18px;
+  text-transform: lowercase;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #00bcd4;
-  transform: scale(1.05);
-}
-
-.stop {
-  background-color: #e91e63;
-}
-
-.stop:hover {
-  background-color: #c2185b;
-  transform: scale(1.05);
+/* Hover effect */
+.btn:hover, .stop:hover {
+  background-color: #4B1F86;
+  transform: translateY(-3px);
 }

@@ -1,25 +1,21 @@
 /*  your css code here. If applicable */
-/* Page background and layout */
 body {
-  background-color: #A167E7;  /* Light purple background */
+  background-color: #A167E7;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-	
 }
 
-/* Container for buttons */
 #buttons {
   display: flex;
   gap: 40px;
 }
 
-/* Buttons (sound + stop) */
 .btn, .stop {
-  background-color: #5E2E9E;  /* Dark purple */
+  background-color: #5E2E9E;
   color: white;
   border: none;
   border-radius: 5px;
@@ -31,8 +27,8 @@ body {
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-/* Hover effect */
 .btn:hover, .stop:hover {
   background-color: #4B1F86;
   transform: translateY(-3px);
 }
+
